@@ -1,0 +1,10 @@
+namespace sourcecontrol.core_db;
+
+context sales {
+
+    /*@@layout{"layoutInfo":{"x":-155,"y":-40.5}}*/
+    entity businessPartner {
+        key id   : String(10);
+            name : String(10);
+    };
+};

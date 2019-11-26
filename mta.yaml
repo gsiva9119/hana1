@@ -1,0 +1,20 @@
+ID: sourcecontrol
+_schema-version: '2.1'
+description: Testing Git Hub
+version: 0.0.1
+
+modules:
+ - name: core_db
+   type: hdb
+   path: core_db
+   requires:
+    - name: hdi_core_db
+
+resources:
+ - name: hdi_core_db
+   parameters:
+      config:
+         schema: testschema
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
