@@ -6,5 +6,6 @@ context sales {
     entity businessPartner {
         key id   : String(10);
             name : String(10);
+            country: STring(10);
     };
 };
